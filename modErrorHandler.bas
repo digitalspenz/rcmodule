@@ -13,3 +13,19 @@ Public Sub DisplayUnexpectedError(ErrorNumber As String, ErrorDescription As Str
    
 End Sub
 
+
+'--this will be the updated error handling routine that will be implemented in the future
+'On Error GoTo Error_Handler
+    'Your code will go here
+    
+'Error_Handler_Exit:
+ ''   On Error Resume Next
+   '' Exit {PROCEDURE_TYPE}
+ 
+'Error_Handler:
+    'MsgBox "The following error has occured" & vbCrLf & vbCrLf & _
+    ''       "Error Number: " & Err.Number & vbCrLf & _
+     ''      "Error Source: {PROCEDURE_NAME}/{MODULE_NAME}" & vbCrLf & _
+     ''      "Error Description: " & Err.Description, vbCritical, _
+     ''      "An Error has Occured!"
+  ''  Resume Error_Handler_Exit
